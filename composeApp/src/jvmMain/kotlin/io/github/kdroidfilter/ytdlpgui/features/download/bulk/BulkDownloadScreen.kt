@@ -24,7 +24,6 @@ import io.github.composefluent.FluentTheme
 import io.github.composefluent.component.*
 import io.github.composefluent.icons.Icons
 import io.github.composefluent.icons.regular.*
-import io.github.kdroidfilter.ytdlp.YtDlpWrapper
 import io.github.kdroidfilter.ytdlp.model.PlaylistInfo
 import io.github.kdroidfilter.ytdlp.model.VideoInfo
 import io.github.kdroidfilter.ytdlpgui.core.design.components.Switcher
@@ -124,12 +123,10 @@ private fun PlaylistContentView(
     Column(
         modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp)
     ) {
-        // Playlist header
         PlaylistHeader(playlist = playlist)
 
         Spacer(Modifier.height(16.dp))
 
-        // Selection controls
         SelectionControls(
             selectedCount = state.selectedCount,
             totalCount = state.totalCount,
@@ -140,7 +137,6 @@ private fun PlaylistContentView(
 
         Spacer(Modifier.height(12.dp))
 
-        // Video list
         Box(modifier = Modifier.weight(1f)) {
             val listState = rememberLazyListState()
             LazyColumn(
@@ -164,7 +160,6 @@ private fun PlaylistContentView(
 
         Spacer(Modifier.height(16.dp))
 
-        // Download options
         DownloadOptions(
             state = state,
             onEvent = onEvent,
@@ -180,7 +175,6 @@ private fun PlaylistHeader(playlist: PlaylistInfo) {
         modifier = Modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        // Playlist thumbnail
         AsyncImage(
             model = playlist.thumbnail,
             contentDescription = null,
@@ -205,14 +199,12 @@ private fun PlaylistHeader(playlist: PlaylistInfo) {
                 Text(
                     text = uploader,
                     style = FluentTheme.typography.caption,
-                    color = FluentTheme.colors.text.secondary
                 )
             }
             Spacer(Modifier.height(4.dp))
             Text(
                 text = stringResource(Res.string.playlist_video_count, playlist.entries.size),
                 style = FluentTheme.typography.caption,
-                color = FluentTheme.colors.text.secondary
             )
         }
     }
@@ -258,21 +250,20 @@ private fun VideoItem(
             .fillMaxWidth()
             .clip(RoundedCornerShape(8.dp))
             .background(
-                if (isSelected) FluentTheme.colors.subtleFill.secondary
+                if (isSelected) FluentTheme.colors.subtleFill.tertiary
                 else FluentTheme.colors.subtleFill.transparent
             )
             .clickable(onClick = onToggle)
             .padding(8.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Checkbox(
-            checked = isSelected,
-            onCheckedChange = { onToggle() },
+        CheckBox(
+            isSelected,
+            onCheckStateChange = { onToggle() },
         )
 
         Spacer(Modifier.width(8.dp))
 
-        // Video thumbnail
         Box(
             modifier = Modifier
                 .width(120.dp)
@@ -285,7 +276,6 @@ private fun VideoItem(
                 modifier = Modifier.fillMaxSize(),
                 contentScale = ContentScale.Crop
             )
-            // Duration badge
             video.duration?.let { duration ->
                 Box(
                     modifier = Modifier
@@ -317,7 +307,6 @@ private fun VideoItem(
                 Text(
                     text = uploader,
                     style = FluentTheme.typography.caption,
-                    color = FluentTheme.colors.text.secondary,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
                 )
@@ -335,7 +324,6 @@ private fun DownloadOptions(
         modifier = Modifier.fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        // Audio only toggle
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -354,7 +342,6 @@ private fun DownloadOptions(
             )
         }
 
-        // Quality selector
         if (!state.isAudioOnly && state.availablePresets.isNotEmpty()) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -377,7 +364,6 @@ private fun DownloadOptions(
             }
         }
 
-        // Audio quality selector
         if (state.isAudioOnly && state.availableAudioQualityPresets.isNotEmpty()) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -400,14 +386,13 @@ private fun DownloadOptions(
             }
         }
 
-        // Download button
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.Center
         ) {
             AccentButton(
                 onClick = { onEvent(BulkDownloadEvents.StartDownload) },
-                enabled = state.selectedCount > 0
+                disabled = state.selectedCount == 0
             ) {
                 Icon(Icons.Default.ArrowDownload, null)
                 Spacer(Modifier.width(8.dp))
