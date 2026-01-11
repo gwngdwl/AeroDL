@@ -135,7 +135,7 @@ fun App() {
 
             navigation<Destination.Download.Graph>(startDestination = Destination.Download.Single("")) {
                 noAnimatedComposable<Destination.Download.Single> { backStackEntry -> SingleDownloadScreen(navController, backStackEntry) }
-                noAnimatedComposable<Destination.Download.Bulk> { BulkDownloadScreen() }
+                noAnimatedComposable<Destination.Download.Bulk> { backStackEntry -> BulkDownloadScreen(navController, backStackEntry) }
             }
         }
 

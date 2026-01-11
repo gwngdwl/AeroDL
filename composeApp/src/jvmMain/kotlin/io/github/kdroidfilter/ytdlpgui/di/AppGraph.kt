@@ -39,6 +39,9 @@ abstract class AppGraph : ViewModelGraph {
     // Factory for SingleDownloadViewModel (needs SavedStateHandle via assisted injection)
     abstract val singleDownloadViewModelFactory: io.github.kdroidfilter.ytdlpgui.features.download.single.SingleDownloadViewModel.Factory
 
+    // Factory for BulkDownloadViewModel (needs SavedStateHandle via assisted injection)
+    abstract val bulkDownloadViewModelFactory: io.github.kdroidfilter.ytdlpgui.features.download.bulk.BulkDownloadViewModel.Factory
+
     @Provides
     @SingleIn(AppScope::class)
     fun provideYtDlpWrapper(): YtDlpWrapper = YtDlpWrapper()

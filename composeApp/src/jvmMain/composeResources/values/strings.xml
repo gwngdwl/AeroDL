@@ -244,4 +244,16 @@
     <!-- Single download: friendly captions -->
     <string name="single_sponsorblock_caption">We detected sponsored segments in this video. Enable to automatically remove them from the download — often these are ads not directly related to the main content.</string>
     <string name="single_split_chapters_caption">We detected that this video is divided into chapters. Enable to save one file per chapter — especially useful for DJ sets or long mixes to get one file per track.</string>
+
+    <!-- Playlist/Bulk download -->
+    <string name="playlist_loading">Loading playlist…</string>
+    <string name="playlist_untitled">Untitled Playlist</string>
+    <string name="playlist_video_count">%1$d videos</string>
+    <string name="playlist_selected_count">%1$d of %2$d selected</string>
+    <string name="playlist_select_all">Select all</string>
+    <string name="playlist_deselect_all">Deselect all</string>
+    <string name="playlist_audio_only">Audio only</string>
+    <string name="playlist_video_quality">Video quality</string>
+    <string name="playlist_audio_quality">Audio quality</string>
+    <string name="playlist_download_selected">Download %1$d videos</string>
 </resources>

@@ -246,5 +246,17 @@
     <string name="single_sponsorblock_caption">זיהינו קטעים ממומנים בסרטון הזה. הפעלת האפשרות תסיר אותם אוטומטית מההורדה – ברוב המקרים מדובר בפרסומות שאינן קשורות ישירות לתוכן המרכזי.</string>
     <string name="single_split_chapters_caption">זיהינו שהסרטון מחולק לפרקים. הפעלת האפשרות תשמור קובץ נפרד לכל פרק – שימושי במיוחד במחרוזות או מיקסים ארוכים כדי לקבל קובץ אחד לכל שיר.</string>
 
+    <!-- הורדת פלייליסט -->
+    <string name="playlist_loading">טוען פלייליסט…</string>
+    <string name="playlist_untitled">פלייליסט ללא שם</string>
+    <string name="playlist_video_count">%1$d סרטונים</string>
+    <string name="playlist_selected_count">%1$d מתוך %2$d נבחרו</string>
+    <string name="playlist_select_all">בחר הכל</string>
+    <string name="playlist_deselect_all">בטל בחירה</string>
+    <string name="playlist_audio_only">שמע בלבד</string>
+    <string name="playlist_video_quality">איכות וידאו</string>
+    <string name="playlist_audio_quality">איכות שמע</string>
+    <string name="playlist_download_selected">הורד %1$d סרטונים</string>
+
 
 </resources>

@@ -22,7 +22,7 @@
     <string name="loading">Chargement…</string>
     <string name="next">Suivant</string>
     <string name="error_single_valid_url">Veuillez coller une seule URL valide.</string>
-    <string name="error_invalid_url_format">Format d’URL invalide.</string>
+    <string name="error_invalid_url_format">Format d'URL invalide.</string>
     <string name="error_url_required">Veuillez entrer une URL.</string>
 
     <!-- Messages d'initialisation -->
@@ -52,7 +52,7 @@
     <string name="download_update">Télécharger</string>
     <string name="ignore_update">Ignorer</string>
 
-    <!-- Titres d’écran temporaires -->
+    <!-- Titres d'écran temporaires -->
     <string name="about_screen_title">Écran À propos</string>
     <string name="bulk_download_screen_title">Écran Téléchargement en lot</string>
     <string name="settings_screen_title">Écran Paramètres</string>
@@ -60,8 +60,8 @@
     <string name="support_on_kofi">Soutenir sur Ko-fi</string>
     <string name="about_credits_title">Crédits</string>
     <string name="credits_made_by">Réalisé par Elie Gambache</string>
-    <string name="credits_thank_jetbrains">Un immense merci à JetBrains pour avoir conçu Kotlin et Compose Multiplatform : sans leur travail passionné, cette application n’aurait tout simplement pas vu le jour.</string>
-    <string name="credits_thank_oss">Je tiens également à exprimer ma profonde gratitude à toutes les développeuses et à tous les développeurs qui publient et maintiennent les bibliothèques open-source que j’utilise : votre générosité et votre savoir-faire nourrissent chaque ligne de code de ce projet.</string>
+    <string name="credits_thank_jetbrains">Un immense merci à JetBrains pour avoir conçu Kotlin et Compose Multiplatform : sans leur travail passionné, cette application n'aurait tout simplement pas vu le jour.</string>
+    <string name="credits_thank_oss">Je tiens également à exprimer ma profonde gratitude à toutes les développeuses et à tous les développeurs qui publient et maintiennent les bibliothèques open-source que j'utilise : votre générosité et votre savoir-faire nourrissent chaque ligne de code de ce projet.</string>
     <string name="credits_github_prompt">Découvrez mes autres projets sur GitHub</string>
     <string name="about_versions_title">Versions des outils</string>
     <string name="ytdlp_version_label">yt-dlp : %1$s</string>
@@ -91,23 +91,14 @@
     <string name="settings_include_preset_in_filename_caption">Ajouter la qualité sélectionnée (exemple : 720p) au nom du fichier téléchargé</string>
     <string name="settings_parallel_downloads_title">Téléchargements parallèles</string>
     <string name="settings_parallel_downloads_caption">Limiter le nombre de téléchargements simultanés</string>
-
-    <!-- Paramètres : Intégration de la miniature dans le MP3 -->
     <string name="settings_embed_thumbnail_mp3_title">Intégrer la miniature dans le MP3</string>
     <string name="settings_embed_thumbnail_mp3_caption">Si activé, intégrer la miniature de la vidéo comme pochette du MP3</string>
-
-    <!-- Paramètres : Fragments concurrents -->
     <string name="settings_concurrent_fragments_title">Threads de téléchargement de fragments</string>
     <string name="settings_concurrent_fragments_caption">Fractionne le fichier et télécharge chaque partie simultanément, accélérant grandement les téléchargements. Non recommandé : peut entraîner un bannissement</string>
-
-
-    <!-- Paramètres : Proxy -->
     <string name="settings_proxy_title">Proxy</string>
     <string name="settings_proxy_caption">Acheminer les téléchargements via un serveur proxy. Supporte les proxys HTTP, HTTPS et SOCKS5.</string>
     <string name="settings_proxy_placeholder">http://127.0.0.1:8080</string>
     <string name="settings_proxy_not_set">Aucun proxy configuré</string>
-
-    <!-- Paramètres : section Dossier de téléchargement -->
     <string name="settings_download_dir_title">Dossier de téléchargement</string>
     <string name="settings_download_dir_caption">Choisissez le dossier où les téléchargements seront enregistrés par défaut.</string>
     <string name="settings_download_dir_not_set">Non défini</string>
@@ -115,7 +106,6 @@
     <string name="settings_select">Sélectionner…</string>
 
     <string name="download_audio">Télécharger l'audio</string>
-    <!-- Ces chaînes appartiennent à l'écran Download (Download screen) -->
     <string name="download_type_video">Vidéo</string>
     <string name="download_type_audio">Audio</string>
     <string name="single_formats">Formats</string>
@@ -123,19 +113,13 @@
     <string name="single_no_subtitle">Aucun sous-titre</string>
     <string name="error_fetch_video_info">Une erreur est survenue lors de la récupération des informations de la vidéo : %1$s</string>
     <string name="thumbnail_content_desc">Miniature</string>
-    
-    <!-- Écran de téléchargement unique : sélection de format et description -->
     <string name="single_choose_format">Choisissez le format à télécharger :</string>
     <string name="single_description">Description</string>
-    
-    <!-- Descriptions de contenu (accessibilité) -->
     <string name="cd_error_icon">Erreur</string>
     <string name="cd_filmstrip_play">Icône pellicule lecture</string>
     <string name="single_audio_quality">Qualité audio</string>
     <string name="single_auto_generated">automatique</string>
     <string name="cd_textbox">Icône zone de texte</string>
-    
-    <!-- Notifications de surveillance du presse-papiers -->
     <string name="clipboard_link_detected_title">Lien détecté</string>
     <string name="clipboard_link_detected_message">Voulez-vous ouvrir ce lien dans %1$s ?\n%2$s</string>
     <string name="clipboard_open_in_app">Ouvrir dans %1$s</string>
@@ -148,7 +132,7 @@
     <string name="onboarding_welcome_title">Bienvenue dans AeroDL</string>
     <string name="onboarding_welcome_subtitle">Configurons quelques réglages pour bien démarrer.</string>
     <string name="onboarding_start">Commencer</string>
-    <string name="onboarding_parallel_selected">Sélectionné : %1$d</string>
+    <string name="onboarding_parallel_selected">Sélectionné : %1$d</string>
     <string name="onboarding_complete_message">Configuration terminée…</string>
     <string name="onboarding_finish_loading_title">Encore quelques instants…</string>
     <string name="onboarding_finish_loading_message">Nous téléchargeons encore des ressources nécessaires au bon fonctionnement du programme.</string>
@@ -161,7 +145,7 @@
     <string name="common_enabled">Activé</string>
     <string name="common_disabled">Désactivé</string>
 
-    <!-- Écran de téléchargement (historique et en cours) -->
+    <!-- Écran de téléchargement -->
     <string name="download_clear_history">Vider l'historique</string>
     <string name="tooltip_clear_history">Vider l'historique</string>
     <string name="download_search_placeholder">Rechercher dans l'historique</string>
@@ -176,38 +160,21 @@
     <string name="status_completed">Terminé</string>
     <string name="status_failed">Échec</string>
     <string name="status_cancelled">Annulé</string>
-    <!-- Paramètres : Lancement automatique -->
     <string name="settings_auto_launch_title">Lancer au démarrage</string>
     <string name="settings_auto_launch_caption">Conseillé si vous utilisez souvent AeroDL : il se lance avec votre système et vous n'avez plus à vous en soucier. Couplé à la surveillance du presse-papiers, vous pouvez lancer vos téléchargements dès que vous copiez un lien.</string>
-
-    <!-- Barre d'état / Menu -->
     <string name="menu_show_window">Afficher la fenêtre</string>
     <string name="menu_hide_window">Cacher la fenêtre</string>
-
-    <!-- Infos application -->
     <string name="app_version_label">Version de l'application : %1$s</string>
-    
-    <!-- Onboarding fin : gestion des erreurs -->
     <string name="onboarding_finish_retry">Réessayer le téléchargement</string>
-    <string name="onboarding_finish_error_hint">Vous pouvez continuer ; AeroDL continuera d’essayer en arrière-plan.</string>
-    
-    <!-- Paramètres : Surveillance du presse-papiers -->
+    <string name="onboarding_finish_error_hint">Vous pouvez continuer ; AeroDL continuera d'essayer en arrière-plan.</string>
     <string name="settings_clipboard_monitoring_title">Surveillance du presse-papiers</string>
     <string name="settings_clipboard_monitoring_caption">Lorsqu'activé, copier un lien vidéo supporté enverra une notification demandant si vous voulez le télécharger.</string>
-
-    <!-- Paramètres : Notifications -->
     <string name="settings_notify_on_complete_title">Notifications de fin de téléchargement</string>
     <string name="settings_notify_on_complete_caption">Envoyer une notification lorsqu'un téléchargement se termine</string>
-
-    <!-- Notification de fin de téléchargement -->
     <string name="download_completed_title">Téléchargement terminé</string>
     <string name="download_completed_message">%1$s a été téléchargé</string>
-
-    <!-- Indicateur d'indisponibilité du dossier -->
     <string name="directory_unavailable">Indisponible</string>
     <string name="tooltip_directory_unavailable">Le fichier/dossier a été déplacé ou supprimé et n'est plus disponible</string>
-
-    <!-- Dialogue d'erreur de téléchargement -->
     <string name="download_error_title">Erreur de téléchargement</string>
     <string name="download_failed_for">Le téléchargement a échoué pour :</string>
     <string name="error_details">Détails de l'erreur :</string>
@@ -215,20 +182,15 @@
     <string name="ok">OK</string>
     <string name="view_error_details">Voir les détails de l'erreur</string>
     <string name="copy_error">Copier l'erreur dans le presse-papiers</string>
-    
-    <!-- Retrait/suppression d'un élément en échec -->
     <string name="remove_from_list">Supprimer de la liste</string>
     <string name="tooltip_remove_from_list">Supprimer cet élément de la liste</string>
-
-    <!-- Affichage de la vitesse de téléchargement -->
-    <string name="download_speed">Vitesse : %1$s</string>
+    <string name="download_speed">Vitesse : %1$s</string>
     <string name="unit_bps">o/s</string>
     <string name="unit_kibps">Kio/s</string>
     <string name="unit_mibps">Mio/s</string>
     <string name="unit_gibps">Gio/s</string>
     <string name="unit_tibps">Tio/s</string>
 
-    <!-- Paramètres : Réinitialisation -->
     <string name="settings_reset_title">Réinitialiser aux valeurs par défaut</string>
     <string name="settings_reset_caption">Réinitialiser tous les paramètres aux valeurs par défaut</string>
     <string name="settings_reset_button">Réinitialiser</string>
@@ -238,8 +200,18 @@
     <string name="settings_reset_dialog_cancel">Annuler</string>
     <string name="split_badge">Split</string>
     <string name="remove_sponsors">Supprimer les sponsors (SponsorBlock)</string>
-    
-    <!-- Écran téléchargement simple : légendes conviviales -->
-    <string name="single_sponsorblock_caption">Nous avons détecté des segments sponsorisés dans cette vidéo. Activez cette option pour les supprimer automatiquement du téléchargement. Dans de nombreux cas, il s’agit de publicités sans lien direct avec le contenu principal.</string>
-    <string name="single_split_chapters_caption">Nous avons détecté que cette vidéo est divisée en chapitres. Activez cette option pour enregistrer un fichier par chapitre — particulièrement utile pour les sets ou longs mixes afin d’obtenir un fichier par morceau.</string>
+    <string name="single_sponsorblock_caption">Nous avons détecté des segments sponsorisés dans cette vidéo. Activez cette option pour les supprimer automatiquement du téléchargement. Dans de nombreux cas, il s'agit de publicités sans lien direct avec le contenu principal.</string>
+    <string name="single_split_chapters_caption">Nous avons détecté que cette vidéo est divisée en chapitres. Activez cette option pour enregistrer un fichier par chapitre — particulièrement utile pour les sets ou longs mixes afin d'obtenir un fichier par morceau.</string>
+
+    <!-- Téléchargement de playlist -->
+    <string name="playlist_loading">Chargement de la playlist…</string>
+    <string name="playlist_untitled">Playlist sans titre</string>
+    <string name="playlist_video_count">%1$d vidéos</string>
+    <string name="playlist_selected_count">%1$d sur %2$d sélectionnées</string>
+    <string name="playlist_select_all">Tout sélectionner</string>
+    <string name="playlist_deselect_all">Tout désélectionner</string>
+    <string name="playlist_audio_only">Audio uniquement</string>
+    <string name="playlist_video_quality">Qualité vidéo</string>
+    <string name="playlist_audio_quality">Qualité audio</string>
+    <string name="playlist_download_selected">Télécharger %1$d vidéos</string>
 </resources>
